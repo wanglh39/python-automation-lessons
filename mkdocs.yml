@@ -4,7 +4,7 @@ site_url: https://wanglh39.github.io/python-automation-lessons/
 repo_url: https://github.com/wanglh39/python-automation-lessons
 repo_name: python-automation-lessons
 
-docs_dir: .
+docs_dir: docs
 
 theme:
   name: material
@@ -35,8 +35,8 @@ theme:
     code: JetBrains Mono
 
 nav:
-  - 首页: README.md
-  - 环境准备: docs/环境准备.md
+  - 首页: index.md
+  - 环境准备: 环境准备.md
   - 模块 1 文件批处理: lessons/01_文件批处理/README.md
   - 模块 2 表格数据: lessons/02_表格数据/README.md
   - 模块 3 网络请求: lessons/03_网络请求/README.md
@@ -51,7 +51,7 @@ nav:
   - 模块 12 图像批处理: lessons/12_图像批处理/README.md
   - 模块 13 数据库操作: lessons/13_数据库操作/README.md
   - 模块 14 浏览器自动化 Playwright: lessons/14_浏览器自动化_playwright/README.md
-  - 最佳实践与常见陷阱: docs/最佳实践与常见陷阱.md
+  - 最佳实践与常见陷阱: 最佳实践与常见陷阱.md
 
 plugins:
   - search:

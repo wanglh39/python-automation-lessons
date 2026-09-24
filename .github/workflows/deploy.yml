@@ -29,6 +29,11 @@ jobs:
       - name: 安装 MkDocs Material
         run: pip install mkdocs-material pymdown-extensions
 
+      - name: 准备文档目录
+        run: |
+          cp README.md docs/index.md
+          cp -r lessons docs/lessons
+
       - name: 构建文档站
         run: mkdocs build
 
