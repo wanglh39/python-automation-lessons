@@ -1,0 +1,26 @@
+[project]
+name = "python-automation-lessons"
+version = "0.1.0"
+description = "Python 自动化脚本教学项目 —— 从标准库到第三方库，学写自动化脚本"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31",
+    "openpyxl>=3.1",
+    "pandas>=2.1",
+    "schedule>=1.2",
+    "watchdog>=3.0",
+    "python-docx>=1.1",
+    "python-pptx>=0.6.23",
+    "pdfplumber>=0.10",
+    "reportlab>=5.0.1",
+    "selenium>=4.15",
+    "beautifulsoup4>=4.12",
+    "pyautogui>=0.9.54",
+    "yagmail>=0.15",
+    "sqlalchemy>=2.0",
+    "pillow>=10.0",
+    "playwright",
+]
+
+[tool.uv]
+dev-dependencies = []

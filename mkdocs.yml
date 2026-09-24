@@ -1,0 +1,85 @@
+site_name: Python 自动化脚本教学
+site_description: 从标准库到第三方库，14 个模块学会用 Python 写自动化脚本
+site_url: https://wanglh39.github.io/python-automation-lessons/
+repo_url: https://github.com/wanglh39/python-automation-lessons
+repo_name: python-automation-lessons
+
+docs_dir: .
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: 切换暗色模式
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: 切换亮色模式
+  font:
+    text: Noto Sans SC
+    code: JetBrains Mono
+
+nav:
+  - 首页: README.md
+  - 环境准备: docs/环境准备.md
+  - 模块 1 文件批处理: lessons/01_文件批处理/README.md
+  - 模块 2 表格数据: lessons/02_表格数据/README.md
+  - 模块 3 网络请求: lessons/03_网络请求/README.md
+  - 模块 4 系统命令行: lessons/04_系统命令行/README.md
+  - 模块 5 定时监控: lessons/05_定时监控/README.md
+  - 模块 6 办公自动化: lessons/06_办公自动化/README.md
+  - 模块 7 浏览器自动化 Selenium: lessons/07_浏览器自动化/README.md
+  - 模块 8 HTML解析爬虫: lessons/08_HTML解析爬虫/README.md
+  - 模块 9 正则与文本提取: lessons/09_正则与文本提取/README.md
+  - 模块 10 GUI桌面自动化: lessons/10_GUI桌面自动化/README.md
+  - 模块 11 邮件自动化: lessons/11_邮件自动化/README.md
+  - 模块 12 图像批处理: lessons/12_图像批处理/README.md
+  - 模块 13 数据库操作: lessons/13_数据库操作/README.md
+  - 模块 14 浏览器自动化 Playwright: lessons/14_浏览器自动化_playwright/README.md
+  - 最佳实践与常见陷阱: docs/最佳实践与常见陷阱.md
+
+plugins:
+  - search:
+      lang:
+        - ja
+        - en
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+exclude:
+  - "*.py"
+  - ".python-version"
+  - "pyproject.toml"
+  - "uv.lock"
+  - ".gitignore"
+  - ".github/"
+  - "site/"
+  - ".venv/"
